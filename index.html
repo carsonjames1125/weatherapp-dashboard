@@ -4,14 +4,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>WEATHER DASHBOARD</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/weather.css">
 </head>
-<header class="contatiner-fluid" id="head">WEATHER DASHBOARD</header>
+
+
+<header class="contatiner-fluid" id="head">
+    <!-- header of the app -->
+    <h1>WEATHER DASHBOARD</h1>
+    </header>
 <body>
+    <!-- search bar w/ button -->
     <div class="search" id="searchbar">
+        <h3 id="search-head">Enter a City:</h3>
         <input type="search" placeholder="Search a city...">
+        <button class="btn searchbtn" type="button" id="searchbtn">Search</button>
+    </div>
+
+    <div class="">
+        <div class="">
+            <div class="">
+                <div class="card-body">
+                    <h3 id="cityname" class="city-name align-middle"></h3>
+                    <!-- where the api weather data will sit -->
+                    <p id="temp"></p>
+                    <p id="hum"></p>
+                    <p id="windspeed"></p>
+                    <p id="temp-max"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- row for the forecasts -->
+    <div class="row d-none" id="5-day-header"> 
+        <div class="">
+            <h3>5-Day Forecast</h3>
+        </div>
+        <div class="row">
+            <div class=""></div>
+            <div class=""></div>
+            <div class=""></div>
+            <div class=""></div>
+            <div class=""></div>
+    </div>
+    </div>
+    
+    <script src="./assets/api.js"></script>
     
 </body>
 </html>
