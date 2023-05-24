@@ -21,12 +21,18 @@
         <input type="search" placeholder="Search a city...">
         <button class="btn searchbtn" type="button" id="searchbtn">Search</button>
     </div>
+    
+    <form id="recentsearch">
+        <ul>
+            <!-- area where recent searches from local storage will reside -->
+        </ul>
+    </form>
 
     <div class="">
         <div class="">
             <div class="">
                 <div class="card-body">
-                    <h3 id="cityname" class="city-name align-middle"></h3>
+                    <h3 id="cityname" class="city-name"></h3>
                     <!-- where the api weather data will sit -->
                     <p id="temp"></p>
                     <p id="hum"></p>
