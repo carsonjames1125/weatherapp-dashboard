@@ -1,19 +1,22 @@
 // need a function that pulls the specific elements i want from the html as well as shows and hides the elements for the starting page. 
-
-function startPage () {
-    var headerEL = document.getElementById("head");
-    var searchBar = document.getElementById('search-head');
-    var searchBtn = document.getElementById('searchbtn');
-    var searchHisEl = document.getElementById('recentsearch');
-    var cityNameEl = document.getElementById('cityname');
-    var tempEl = document.getElementById('temp');
-    var humidityEl = document.getElementById('hum');
-    var windEl = document.getElementById('wind');
-    var tempHighEl = document.getElementById('temp-max');
-    var fivedayHeadEl = document.getElementById('5-day-header');
-    var currentWeather = document.getElementById('currentWeather');
+    var city = "";
+    var headerEL = $("#head");
+    var searchBar = $('#search-head');
+    var searchBtn = $('#searchbtn');
+    var searchHisEl = $('#recentsearch');
+    var cityNameEl = $('#cityname');
+    var currentWeaIcon = $('#weathericon');
+    var tempEl = $('#temp');
+    var humidityEl = $('#hum');
+    var windEl = $('#wind');
+    var tempHighEl = $('#temp-max');
+    var fivedayHeadEl = $('#5-day-header');
+    var currentWeather = $('#currentWeather');
     var RecentEl = JSON.parse(localStorage.getItem('search')) || [];
+
+//  now that i have my variables for the start page i need to use the api to get the weather for the current day and the five day forecast
+    var APIKey = '19089b90a732a9404f2f4940d37c9e3d';
+
+function getWeather(city) {
+    
 }
-
-var apiKey = '19089b90a732a9404f2f4940d37c9e3d';
-
