@@ -10,7 +10,7 @@
 </head>
 
 
-<header class="contatiner-fluid" id="head">
+<header class="container-fluid" id="head">
     <!-- header of the app -->
     <h1>WEATHER DASHBOARD</h1>
     </header>
@@ -18,7 +18,7 @@
     <!-- search bar w/ button -->
     <div class="search" id="searchbar">
         <h3 id="search-head">Enter a City:</h3>
-        <input type="search" placeholder="Search a city...">
+        <input id="searchinput" type="search" placeholder="Search a city...">
         <button class="btn searchbtn" type="button" id="searchbtn">Search</button>
     </div>
     
@@ -28,9 +28,9 @@
         </ul>
     </form>
 
-    <div class="">
-        <div class="">
-            <div class="">
+    <div class="col-lg-9">
+        <div class="row">
+            <div class="col-lg-11 card d-none" id="currentWeather">
                 <div class="card-body">
                     <h3 id="cityname" class="city-name"></h3>
                     <!-- where the api weather data will sit -->
@@ -45,15 +45,15 @@
 
     <!-- row for the forecasts -->
     <div class="row d-none" id="5-day-header"> 
-        <div class="">
+        <div class="col-12">
             <h3>5-Day Forecast</h3>
         </div>
         <div class="row">
-            <div class=""></div>
-            <div class=""></div>
-            <div class=""></div>
-            <div class=""></div>
-            <div class=""></div>
+            <div class="col-md-3 future-forecast rounded"></div>
+            <div class="col-md-3 future-forecast rounded"></div>
+            <div class="col-md-3 future-forecast rounded"></div>
+            <div class="col-md-3 future-forecast rounded"></div>
+            <div class="col-md-3 future-forecast rounded"></div>
     </div>
     </div>
     

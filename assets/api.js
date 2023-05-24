@@ -11,6 +11,7 @@ function startPage () {
     var windEl = document.getElementById('wind');
     var tempHighEl = document.getElementById('temp-max');
     var fivedayHeadEl = document.getElementById('5-day-header');
+    var currentWeather = document.getElementById('currentWeather');
     var RecentEl = JSON.parse(localStorage.getItem('search')) || [];
 }
 
